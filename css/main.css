@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1.5fr;
+    grid-template-rows: 1fr 4fr 3fr 2fr;
+    height: 100vh;
+    margin: 2em;
+    grid-template-areas: "main main header" "main main candy" "nom yum candy" "footer footer candy"
+}
+
+main {
+    /* grid-column: 1/3;
+    grid-row: 1/3; */
+    /* grid-area: 1/1/3/3; */
+    grid-area: main;
+    background-color: rgb(231, 219, 219);
+}
+
+section.nom {
+    /* grid-area: 3/1/4/2; */
+    grid-area: nom;
+    background-color: red;
+}
+
+section.yum {
+    /* grid-area: 3/2/4/3; */
+    grid-area: yum;
+    background-color: rgb(73, 72, 67);
+}
+
+.diabeetus {
+    /* grid-area: 4/1/5/3; */
+    grid-area: footer;
+    background-color: rgb(1, 2, 1);
+}
+
+header {
+    /* grid-area: 1/3/2/4; */
+    grid-area: header;
+}
+
+.candy {
+    /* grid-area: 2 /3 / 5/4; */
+    grid-area: candy;
+    background-image: url('/sweet-pink-candies-6152.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
